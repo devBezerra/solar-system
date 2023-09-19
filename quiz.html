@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz Sistema Solar</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz sobre o Sistema solar</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Pergunta 1:</h2>
+        <form>
+          <span> Quantos planetas existem no sistema solar? </span><br /><br />
+
+          <input type="radio" id="seven" value="7" />
+          <label for="seven">a) 7</label>
+
+          <input type="radio" id="eight" value="8" />
+          <label for="eight">b) 8</label>
+
+          <input type="radio" id="nine" value="9" />
+          <label for="nine">c) 9</label>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+
+      <section>
+        <h2>Pergunta 2:</h2>
+        <form>
+          <span> Quais destes são planetas gasosos? </span><br /><br />
+
+          <input type="checkbox" value="marte" id="marte" />
+          <label for="marte">Marte</label>
+
+          <input type="checkbox" value="saturno" id="saturno" />
+          <label for="saturno">Saturno</label>
+
+          <input type="checkbox" value="jupiter" id="jupiter" />
+          <label for="jupiter">Júpiter</label>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+
+      <section>
+        <h2>Pergunta 3:</h2>
+        <form>
+          <span> Qual é a maior lua de Saturno </span><br /><br />
+          <select name="luas" id="luas">
+            <option value="europa">Europa</option>
+            <option value="tita">Titã</option>
+            <option value="polideuces">Polideuces</option>
+          </select>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+
+      <section>
+        <h2>Pergunta 4:</h2>
+        <form>
+          <span>
+            Em que ano a sonda Voyager 2 foi lançada para explorar os planetas
+            do Sistema Solar? </span
+          ><br /><br />
+
+          <input type="range" id="year" name="year" min="1900" max="2023" />
+          <output id="value"></output>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+
+    <footer>&#169; Sistema Solar</footer>
+  </body>
+
+  <script>
+    const value = document.querySelector("#value");
+    const input = document.querySelector("#year");
+    value.textContent = input.value;
+    input.addEventListener("input", (event) => {
+      value.textContent = event.target.value;
+    });
+  </script>
+</html>
