@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap");
+
+header {
+  background-color: #ad0b0a;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 32px;
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  background-color: #000;
+}
+
+section {
+  background-color: #eee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+
+  transition: transform 0.2s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #3a3a3a;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 10px;
+}
+
+p {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: "DM Sans", sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+select:hover {
+  border-color: #007bff;
+}
+
+button[type="submit"] {
+  background-color: #000;
+  color: #ad0b0a;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #aeaeae;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+output {
+  display: block;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+footer {
+  background-color: #f57c7c;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
